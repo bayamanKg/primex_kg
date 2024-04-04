@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primex</title>
+    <script src="https://kit.fontawesome.com/1f89b35f1f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./slider.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <nav class="header-nav">
+                <div class="logo"><img src="./img/logo.png" width="150px" alt=""></div>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#footer">Контакты</a></li>
+                </ul>
+                <div class="icons">
+                    <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://web.telegram.org/a/    " target="_blank"> <i class="fa-brands fa-telegram"></i> </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Контент -->
+    <div class="content">
+        <div class="sim-slider">
+            <ul class="sim-slider-list">
+              <li><img src="http://pvbk.spb.ru/inc/slider/imgs/no-image.gif" alt="screen"></li> 
+              <li class="sim-slider-element"><img src="./img/fon.png" alt="0"></li>
+              <li class="sim-slider-element"><img src="/img/fon2.jpg" alt="1"></li>
+              <li class="sim-slider-element"><img src="./img/fon3.jpg" alt="2"></li>
+            </ul>
+            <div class="sim-slider-arrow-left"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="sim-slider-arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="sim-slider-dots"></div>
+          </div>
+    </div>
+    <div id="about" class="main">
+        <div class="main-image" data-aos="fade-right"><img src="./img/oil.png" width="700px"></div>
+        <div class="main-text" data-aos="fade-left">
+            <h2>О нас</h2>
+            <p><b>ОсОО Primex</b> - компания, специализирующаяся на поставках моторных масел. 
+                Она предоставляет широкий ассортимент продукции для автомобилей, грузовиков,
+                 мотоциклов и другой техники. Ключевой акцент компании направлен на обеспечение 
+                 клиентов высококачественными смазочными материалами, соответствующими стандартам и
+                  требованиям современных двигателей.</p>
+        </div>
+    </div>
+
+    <div class="catalog">
+        <div data-aos="flip-up" class="catalog-text"><h2>Каталог товаров</h2></div>
+        <div data-aos="flip-down" class="wrapper">
+            <i id="left" class="fa-solid fa-chevron-left"></i>
+            <ul class="carouse1">
+                <li class="card">
+                    <div class="img"><img src="./img/gEnergy.jpg" alt="" draggable="false"></div>
+                    <h2>G-Energy synthetic</h2>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./img/gEnergy.jpg" alt="" draggable="false"></div>
+                    <h2>G-Energy synthetic</h2>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./img/gEnergy.jpg" alt="" draggable="false"></div>
+                    <h2>G-Energy synthetic</h2>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./img/gEnergy.jpg" alt="" draggable="false"></div>
+                    <h2>G-Energy synthetic</h2>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./img/gEnergy.jpg" alt="" draggable="false"></div>
+                    <h2>G-Energy synthetic</h2>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./img/gEnergy.jpg" alt="" draggable="false"></div>
+                    <h2>G-Energy synthetic</h2>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <footer id="footer" class="footer">
+        <h2 data-aos="zoom-in">Контакная информация</h2>
+        <div class="container">
+            <div class="footer-row">
+                <div data-aos="fade-up"   class="footer-blog">
+                    <i class="fa-solid fa-phone"></i>
+                    <h2>Горячая линия</h2>
+                    <p>Вы можете позвонить нам по бесплатному номеру</p>
+                </div>
+                <div data-aos="fade-up"  class="footer-blog">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h2>Написать нам</h2>
+                    <p>Ждем Ваших обращений и будем рады помочь вам</p>
+                </div>
+                <div data-aos="fade-up"  class="footer-blog">
+                    <i class="fa-solid fa-map-location"></i>
+                    <h2>Где мы находимся</h2>
+                    <p>Нажмите потом узнаете в каком местоположение мы находимся</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html> 

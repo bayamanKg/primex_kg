@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+/* header */
+.header {
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    /* box-shadow: 3px 1px 10px orange; */
+}
+
+
+
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav ul {
+    display: flex;
+    gap: 30px;
+}
+.header-nav ul li {
+    list-style: none;
+}
+.header-nav ul li a{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header-nav .icons {
+    font-size: 30px;
+}
+
+a {
+    color: #fff;
+    transition: 400ms;
+}
+
+a:hover {
+    color: orange;
+}
+
+.icons a i:nth-child(1){
+    margin-right: 10px;
+}
+/* main */
+
+.main {
+    background-color: #000;
+    max-width: 100%;
+    display: flex;
+    color: #fff;
+}
+
+.main-text {
+    width: 700px;
+    margin-top: 150px;
+}
+
+.main-text  h2 {
+    margin-bottom: 30px;
+    font-size:40px;
+    color: gold;
+}
+
+.main-text p {
+    line-height: 24px;
+    font-size: 18px;
+}
+/* catalog */
+.catalog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+    flex-direction: column;
+}
+.catalog-text h2 {
+    color: #fff;
+    font-size: 40px;
+    padding-bottom: 80px;
+}
+.carouse1.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+.carouse1 :where(.card, .img){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .img img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 4px solid #fff;
+    padding-bottom: 20px;
+}
+
+
+.card {
+    list-style: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 342px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.wrapper .carouse1{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carouse1.dragging{
+    scroll-behavior: auto;
+}
+
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper i {
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    cursor:  pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0px 3px 6px #00000047;
+}
+
+.wrapper i:first-child{
+    left: -22px;    
+}
+
+.wrapper i:last-child{
+    right: -22px;
+}
+
+/* footer */
+
+
+.footer {
+    color: #fff;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+.footer-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.footer h2 {
+    font-size: 40px;
+    padding-bottom: 60px;
+}
+.footer-blog {
+    padding: 30px;
+}
+.footer-blog h2 {
+    font-size: 30px;
+    padding-top:30px ;
+    padding-bottom: 10px;
+}
+.footer-blog i {
+    font-size: 60px;
+    color: orange ;
+}
+
+@media screen and (max-width:900px){
+    .wrapper .carouse1{
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+@media screen and (max-width:570px){
+    .wrapper .carouse1{
+        grid-auto-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .main-image img {
+        width: 400px;
+    }
+
+    .main-text {
+        margin-top: 70px;
+        padding: 0px 30px;
+    }
+    .main-text h2 {
+        font-size: 30px;
+    }
+    .main-text p {
+        font-size: 17px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .catalog h2 {
+        padding-bottom: 40px;
+        padding-top: 40px
+    }
+    .header-nav ul{
+        display: none;
+    }
+    .main-image {
+        display: none;
+    }
+    .main {
+        padding-bottom:20px ;
+    }
+    .main-text h2{
+        text-align: center;
+    }
+    .catalog-text h2 {
+        font-size: 30px;
+    }
+    .footer h2 {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .footer-row {
+        grid-template-columns: 100%;
+        gap: 30px;
+    }
+    .footer {
+        padding-top: 50px;
+    }
+    .footer-blog h2 {
+        font-size: 25px;
+    }
+}
